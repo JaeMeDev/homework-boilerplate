@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Project Name
 
-## Getting Started
+<a href="https://github.com/JaeMeDev/homework-boilerplate/actions/workflows/ci.yml">
+  <img src="https://img.shields.io/github/actions/workflow/status/JaeMeDev/homework-boilerplate/ci.yml?branch=main&label=CI&logo=GitHub&style=flat-square" />
+</a>
 
-First, run the development server:
+<a href="https://codecov.io/gh/JaeMeDev/homework-boilerplate">
+  <img src="https://codecov.io/gh/JaeMeDev/homework-boilerplate/branch/main/graph/badge.svg?token=PW2VBH7UQL"/>
+</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<a href="https://main--646abfe84814fa6f70e7560f.chromatic.com">
+  <img src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg">
+</a>
+
+
+<a href="https://github.com/JaeMeDev/homework-boilerplate/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/JaeMeDev/homework-boilerplate?style=flat-square">
+</a>
+
+<a href="#">
+  <img src="https://img.shields.io/github/repo-size/JaeMeDev/homework-boilerplate?logo=yarn&style=flat-square">
+</a>
+
+## 🏗 Project Structure
+
+```
+📦 popo-client
+ ┣ 📂 .github
+ ┣ 📂 .husky
+ ┣ 📂 .storybook
+ ┣ 📂 .vscode 
+ ┣ 📂 .yarn
+ ┣ 📂 @types
+ ┣ 📂 __mocks__
+ ┣ 📂 public
+ ┣ 📂 src
+ ┃ ┣ 📂 app
+ ┃ ┣ 📂 components
+ ┃ ┣ 📂 styles
+ ┃ ┣ 📂 test
+ ┣ 📜 .eslintrc.js
+ ┣ 📜 .gitignore
+ ┣ 📜 .lintstagedrc.json
+ ┣ 📜 .pnp.cjs
+ ┣ 📜 .pnp.loader.mjs
+ ┣ 📜 .yarnrc.yml
+ ┣ 📜 .commitlint.config.js
+ ┣ 📜 jest.config.js
+ ┣ 📜 jest.setup.js
+ ┣ 📜 LICENSE
+ ┣ 📜 next.config.js
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+ ┣ 📜 tsconfig.json
+ ┗ 📜 yarn.lock
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="#">
+  <img src="https://img.shields.io/github/package-json/dependency-version/JaeMeDev/homework-boilerplate/next?logo=next.js&style=for-the-badge">
+</a>
+<a href="#">
+  <img src="https://img.shields.io/github/package-json/dependency-version/JaeMeDev/homework-boilerplate/react?logo=react&style=for-the-badge">
+</a>
+<a href="#">
+  <img src="https://img.shields.io/github/package-json/dependency-version/JaeMeDev/homework-boilerplate/styled-components?logo=styled-components&label=styled-components&style=for-the-badge">
+</a>
+<a href="#">
+  <img src="https://img.shields.io/github/package-json/dependency-version/JaeMeDev/homework-boilerplate/dev/jest?logo=jest&logoColor=%23C21325&style=for-the-badge">
+</a>
+<a href="#">
+    <img src="https://img.shields.io/github/package-json/dependency-version/JaeMeDev/homework-boilerplate/dev/storybook?logo=storybook&style=for-the-badge">
+</a>
