@@ -159,3 +159,31 @@ jobs:
           base-branch: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  job_publish_storybook_chromatic:
+    name: Chromatic Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out current commit (${{ github.sha }})
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.DEFAULT_NODE_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          echo 'nodeLinker: "node-modules"' >> .yarnrc.yml
+          yarn rebuild
+          yarn build
+
+      - uses: chromaui/action@v1
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitOnceUploaded: true
