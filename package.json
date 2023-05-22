@@ -14,7 +14,9 @@
     "test:watchAll": "jest --watchAll",
     "test:coverage": "yarn test:unit --coverage",
     "test:watchAll:coverage": "jest --watchAll --coverage",
-    "postinstall": "husky install && chmod ug+x .husky/*"
+    "postinstall": "husky install && chmod ug+x .husky/*",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "13.4.3",
@@ -27,6 +29,15 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@next/eslint-plugin-next": "^13.4.3",
+    "@storybook/addon-docs": "^7.0.12",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-interactions": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/blocks": "^7.0.12",
+    "@storybook/nextjs": "^7.0.12",
+    "@storybook/react": "^7.0.12",
+    "@storybook/react-vite": "^7.0.12",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.1",
@@ -48,6 +59,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-testing-library": "^5.11.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "given2": "^2.1.7",
@@ -57,7 +69,9 @@
     "jest-plugin-context": "^2.9.0",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.2",
-    "typescript": "5.0.4"
+    "storybook": "^7.0.12",
+    "typescript": "5.0.4",
+    "vite": "^4.3.8"
   },
   "packageManager": "yarn@3.5.1"
 }

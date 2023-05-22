@@ -66,6 +66,16 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
       },
     },
+    {
+      extends: ['plugin:storybook/recommended'],
+      files: ['**/*.stories.tsx'],
+      rules: {
+        'react/function-component-definition': 'off',
+        'react/jsx-props-no-spreading': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
   ],
   settings: {
     'import/resolver': {
@@ -118,6 +128,7 @@ module.exports = {
         json: 'never',
       },
     ],
+    'react/no-array-index-key': 'off',
     'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
   },
